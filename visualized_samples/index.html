@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glenda Dataset COCO Visualizations</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: #0f1117;
+            color: #e2e8f0;
+            padding: 24px;
+        }
+        header {
+            max-width: 1400px;
+            margin: 0 auto 28px;
+            padding: 20px 24px;
+            background: #1a1f2c;
+            border-radius: 12px;
+            border: 1px solid #2d3748;
+        }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #f8fafc; }
+        .stats { color: #94a3b8; font-size: 14px; margin-bottom: 12px; }
+        .categories { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .badge {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        }
+        .grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #1a1f2c;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #2d3748;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+            border-color: #4a5568;
+        }
+        .card-header {
+            padding: 12px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            background: #232936;
+        }
+        .pill {
+            background: #3b82f6;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .card img {
+            width: 100%;
+            display: block;
+            background: #000;
+            cursor: pointer;
+        }
+        .card-footer {
+            padding: 12px 16px;
+            font-size: 12px;
+            color: #94a3b8;
+            line-height: 1.6;
+        }
+        .tag { color: #cbd5e1; font-weight: 500; }
+        .side-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .side-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🔬 Glenda Dataset & COCO Annotations Gallery</h1>
+        <div class="stats">
+            Total Dataset: <strong>373</strong> frames &bull;
+            Annotations: <strong>628</strong> lesions &bull;
+            Visualized in this batch: <strong>12</strong> samples
+        </div>
+        <div class="categories">
+            <span class="badge" style="background-color: #be3ecc; color: #fff;">6.1.1.1_Endo-Peritoneum</span> <span class="badge" style="background-color: #5d59fe; color: #fff;">6.1.1.2_Endo-Ovar</span> <span class="badge" style="background-color: #91d28a; color: #fff;">6.1.1.3_Endo-TIE</span> <span class="badge" style="background-color: #eeec32; color: #fff;">6.1.1.4_Endo-Uterus</span>
+        </div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+  <div class="card-header">
+    <strong>c_100_v_(video_3062.mp4)_f_1458.jpg</strong>
+    <span class="pill">2 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_100_v_(video_3062.mp4)_f_1458.jpg" target="_blank">
+    <img src="overlays/overlay_c_100_v_(video_3062.mp4)_f_1458.jpg" alt="c_100_v_(video_3062.mp4)_f_1458.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.4_Endo-Uterus</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_100_v_(video_3062.mp4)_f_1458.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_102_v_(video_3119.mp4)_f_1311.jpg</strong>
+    <span class="pill">8 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_102_v_(video_3119.mp4)_f_1311.jpg" target="_blank">
+    <img src="overlays/overlay_c_102_v_(video_3119.mp4)_f_1311.jpg" alt="c_102_v_(video_3119.mp4)_f_1311.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.1_Endo-Peritoneum</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_102_v_(video_3119.mp4)_f_1311.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_102_v_(video_3119.mp4)_f_185.jpg</strong>
+    <span class="pill">6 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_102_v_(video_3119.mp4)_f_185.jpg" target="_blank">
+    <img src="overlays/overlay_c_102_v_(video_3119.mp4)_f_185.jpg" alt="c_102_v_(video_3119.mp4)_f_185.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.1_Endo-Peritoneum</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_102_v_(video_3119.mp4)_f_185.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_102_v_(video_3124.mp4)_f_97.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_102_v_(video_3124.mp4)_f_97.jpg" target="_blank">
+    <img src="overlays/overlay_c_102_v_(video_3124.mp4)_f_97.jpg" alt="c_102_v_(video_3124.mp4)_f_97.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.1_Endo-Peritoneum</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_102_v_(video_3124.mp4)_f_97.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_113_v_(video_3427.mp4)_f_211.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_113_v_(video_3427.mp4)_f_211.jpg" target="_blank">
+    <img src="overlays/overlay_c_113_v_(video_3427.mp4)_f_211.jpg" alt="c_113_v_(video_3427.mp4)_f_211.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.2_Endo-Ovar</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_113_v_(video_3427.mp4)_f_211.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_120_v_(video_3599.mp4)_f_39.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_120_v_(video_3599.mp4)_f_39.jpg" target="_blank">
+    <img src="overlays/overlay_c_120_v_(video_3599.mp4)_f_39.jpg" alt="c_120_v_(video_3599.mp4)_f_39.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.3_Endo-TIE</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_120_v_(video_3599.mp4)_f_39.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_121_v_(video_3630.mp4)_f_37.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_121_v_(video_3630.mp4)_f_37.jpg" target="_blank">
+    <img src="overlays/overlay_c_121_v_(video_3630.mp4)_f_37.jpg" alt="c_121_v_(video_3630.mp4)_f_37.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.3_Endo-TIE</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_121_v_(video_3630.mp4)_f_37.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_125_v_(video_3726.mp4)_f_247.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_125_v_(video_3726.mp4)_f_247.jpg" target="_blank">
+    <img src="overlays/overlay_c_125_v_(video_3726.mp4)_f_247.jpg" alt="c_125_v_(video_3726.mp4)_f_247.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.3_Endo-TIE</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_125_v_(video_3726.mp4)_f_247.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_127_v_(video_3756.mp4)_f_40.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_127_v_(video_3756.mp4)_f_40.jpg" target="_blank">
+    <img src="overlays/overlay_c_127_v_(video_3756.mp4)_f_40.jpg" alt="c_127_v_(video_3756.mp4)_f_40.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.2_Endo-Ovar</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_127_v_(video_3756.mp4)_f_40.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_135_v_(video_4058.mp4)_f_1.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_135_v_(video_4058.mp4)_f_1.jpg" target="_blank">
+    <img src="overlays/overlay_c_135_v_(video_4058.mp4)_f_1.jpg" alt="c_135_v_(video_4058.mp4)_f_1.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.2_Endo-Ovar</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_135_v_(video_4058.mp4)_f_1.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_135_v_(video_4079.mp4)_f_229.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_135_v_(video_4079.mp4)_f_229.jpg" target="_blank">
+    <img src="overlays/overlay_c_135_v_(video_4079.mp4)_f_229.jpg" alt="c_135_v_(video_4079.mp4)_f_229.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.4_Endo-Uterus</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_135_v_(video_4079.mp4)_f_229.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    <strong>c_14_v_(video_401.mp4)_f_910.jpg</strong>
+    <span class="pill">1 annotations</span>
+  </div>
+  <a href="overlays/overlay_c_14_v_(video_401.mp4)_f_910.jpg" target="_blank">
+    <img src="overlays/overlay_c_14_v_(video_401.mp4)_f_910.jpg" alt="c_14_v_(video_401.mp4)_f_910.jpg" loading="lazy" />
+  </a>
+  <div class="card-footer">
+    <span class="tag">Classes: 6.1.1.4_Endo-Uterus</span>
+    <br><a class="side-link" href="side_by_side/sbs_c_14_v_(video_401.mp4)_f_910.jpg" target="_blank">View Side-by-Side (Original | Mask | Overlay)</a>
+  </div>
+</div>
+    </div>
+</body>
+</html>
