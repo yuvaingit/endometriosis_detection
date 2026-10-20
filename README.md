@@ -42,7 +42,7 @@ Run the interactive web interface:
 ```bash
 streamlit run app.py
 ```
-Open [http://localhost:8501](http://localhost:8501) in your browser to:
+Open (https://endometriosisdetection-ap8zzyicuani2jfnccjh8i.streamlit.app/) in your browser to:
 - Upload any laparoscopic image (`.jpg`, `.png`).
 - Select pre-configured validation frames.
 - Adjust segmentation overlay transparency in real-time.
