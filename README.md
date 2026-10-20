@@ -1,6 +1,6 @@
 # 🔬 Endometriosis Lesion Segmentation AI
 
-An end-to-end deep learning pipeline for multi-class endometriosis lesion segmentation from laparoscopic video frames using U-Net, trained on the **GLENDA v1.5** benchmark dataset.
+An end-to-end deep learning pipeline for multi-class endometriosis lesion segmentation from laparoscopic video frames using U-Net.
 
 ---
 
